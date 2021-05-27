@@ -103,8 +103,8 @@ It's useful to know if a user has completed the verification flow or canceled it
 | onFinish     | This callback method is triggered when user completes verification. Get session data here. |
 | onError      | This callback method is triggered on error. [Error Codes](#error-codes).                   |
 
-KvalifikaSDK uses NativeEventEmitter to communicate between Android and iOS native modules.
-**Make sure to remove callbacks on unmount;**
+KvalifikaSDK uses NativeEventEmitter to communicate between Android and iOS native modules.<br />
+**Make sure to remove callbacks on unmount.**
 
 ```tsx
 const App = () => {
