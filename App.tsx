@@ -36,10 +36,43 @@ const App = () => {
     KvalifikaSDK.onError((error, message) => {
       console.log(error, message);
 
+      if (error === KvalifikaSDKError.INVALID_APP_ID) {
+      }
+
       if (error === KvalifikaSDKError.USER_CANCELLED) {
-        setTimeout(() => {
-          Alert.alert('User cancelled verification');
-        }, 1000);
+      }
+
+      if (error === KvalifikaSDKError.TIMEOUT) {
+      }
+
+      if (error === KvalifikaSDKError.USER_CANCELLED) {
+      }
+
+      if (error === KvalifikaSDKError.SESSION_UNSUCCESSFUL) {
+      }
+
+      if (error === KvalifikaSDKError.ID_UNSUCCESSFUL) {
+      }
+
+      if (error === KvalifikaSDKError.CAMERA_PERMISSION_DENIED) {
+      }
+
+      if (error === KvalifikaSDKError.LANDSCAPE_MODE_NOT_ALLOWED) {
+      }
+
+      if (error === KvalifikaSDKError.REVERSE_PORTRAIT_NOT_ALLOWED) {
+      }
+
+      if (error === KvalifikaSDKError.FACE_IMAGES_UPLOAD_FAILED) {
+      }
+
+      if (error === KvalifikaSDKError.DOCUMENT_IMAGES_UPLOAD_FAILED) {
+      }
+
+      if (error === KvalifikaSDKError.COMPARE_IMAGES_FAILED) {
+      }
+
+      if (error === KvalifikaSDKError.UNKNOWN_INTERNAL_ERROR) {
       }
     });
 
@@ -50,7 +83,7 @@ const App = () => {
 
   useEffect(() => {
     KvalifikaSDK.initialize({
-      appId: '',
+      appId: 'YOUR APP ID',
       locale: KvalifikaSDKLocale.EN,
     });
   }, []);
