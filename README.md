@@ -5,6 +5,8 @@ Use Kvalifika SDK to easily integrate into your React Native app
 Table of content:
 
 - [Installation](#installation)
+  - [For React Native <0.60](#for-react-native)
+  - [Android Specific Parts](#android-specific-parts)
 - [Initialize the SDK](#initialize-the-sdk)
 - [Start Verification](#start-verification)
 - [Handling Verifications](#handling-verifications)
@@ -30,6 +32,49 @@ or
 ```bash
 yarn add @kvalifika/react-native-sdk
 ```
+
+&nbsp;
+
+### For React Native <0.60
+
+If your React Native version is larger than >= 0.60, you can ignore this step. Otherwise, please run the following command:
+
+```bash
+react-native link @kvalifika/react-native-sdk
+```
+
+&nbsp;
+
+### Android Specific Parts
+
+After installing NPM package, please do following steps to set up Android environment:
+
+Please add following lines to `android/build.gradle` file:
+
+1. Set `minSdkVersion` to `21` or higher
+2. Add maven url to repositories `maven { url 'https://s3.eu-central-1.amazonaws.com/com.kvalifika.sdk' }`
+
+**Code Example**
+
+```groovy
+// Top-level build.gradle file
+
+buildscript {
+  ext {
+    minSdkVersion = 21
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+    maven { url 'https://s3.eu-central-1.amazonaws.com/com.kvalifika.sdk' }
+  }
+}
+```
+
+&nbsp;
 
 ## Initialize the SDK
 
@@ -102,6 +147,8 @@ It's useful to know if a user has completed the verification flow or canceled it
 | onStart      | This callback method is triggered when user starts verification.                           |
 | onFinish     | This callback method is triggered when user completes verification. Get session data here. |
 | onError      | This callback method is triggered on error. [Error Codes](#error-codes).                   |
+
+&nbsp;
 
 KvalifikaSDK uses NativeEventEmitter to communicate between Android and iOS native modules.<br />
 **Make sure to remove callbacks on unmount.**
