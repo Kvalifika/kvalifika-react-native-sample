@@ -5,7 +5,7 @@ Use Kvalifika SDK to easily integrate into your React Native app
 Table of content:
 
 - [Installation](#installation)
-  - [For React Native <0.60](#for-react-native)
+  - [For React Native <0.60](#for-react-native-060)
   - [Android Specific Parts](#android-specific-parts)
 - [Initialize the SDK](#initialize-the-sdk)
 - [Start Verification](#start-verification)
