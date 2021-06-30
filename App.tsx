@@ -84,7 +84,7 @@ const App = () => {
 
   useEffect(() => {
     KvalifikaSDK.initialize({
-      appId: 'YOUR APP ID',
+      appId: '7bd2bab9-5bcb-4f8d-a0c8-d7fd3fd4653b',
       locale: KvalifikaSDKLocale.EN,
     });
   }, []);
