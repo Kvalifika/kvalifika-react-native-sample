@@ -6,6 +6,7 @@ Table of content:
 
 - [Installation](#installation)
   - [For React Native <0.60](#for-react-native-060)
+  - [iOS Specific Steps](#ios-specific-steps)
   - [Android Specific Parts](#android-specific-parts)
 - [Initialize the SDK](#initialize-the-sdk)
 - [Start Verification](#start-verification)
@@ -41,6 +42,36 @@ If your React Native version is larger than >= 0.60, you can ignore this step. O
 
 ```bash
 react-native link @kvalifika/react-native-sdk
+```
+
+&nbsp;
+
+### iOS Specific Steps
+
+Add sources to Podfile and use minimum iOS version `11.0`
+
+```podspec
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Kvalifika/kvalifika-cocoapods-specs.git'
+source 'https://github.com/Kvalifika/zoom-cocoapods-specs.git'
+
+platform :ios, '11.0'
+```
+
+Then navigate to `ios` folder and run `pod install`
+
+`Note:` pod install might take long time
+
+&nbsp;
+
+Please add the following permissions to your app's Info.plist, so that the Kvalifika iOS SDK can access a user's camera to run a verification. You can do this in the property list view or by code. Right-click on Info.plist and select Open As -> Source Code. Add the lines below somewhere inside the <dict> </dict>
+
+```plist
+<!-- permission strings to be include in info.plist -->
+<key>NSCameraUsageDescription</key>
+<string>Please give us access to your camera, to complete the verification.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Please give us access to your photo library to verify you.</string>
 ```
 
 &nbsp;
