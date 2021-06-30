@@ -11,6 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		57F86FB0268CE7F500B9086F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F86FAF268CE7F500B9086F /* File.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8A0FA56C5243B40EB766BF52 /* libPods-KvalifikaSdkSample-KvalifikaSdkSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F7549FCC779AC4C0D1927 /* libPods-KvalifikaSdkSample-KvalifikaSdkSampleTests.a */; };
 		B608D8CB614B0D918AE3749B /* libPods-KvalifikaSdkSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BBC1AF6D9853DFB598631F /* libPods-KvalifikaSdkSample.a */; };
@@ -37,6 +38,8 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KvalifikaSdkSample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KvalifikaSdkSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KvalifikaSdkSample/main.m; sourceTree = "<group>"; };
+		57F86FAF268CE7F500B9086F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		57F86FB1268CF02400B9086F /* KvalifikaSdkSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KvalifikaSdkSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EEA5FC1769E37FCA297F101 /* Pods-KvalifikaSdkSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KvalifikaSdkSample.debug.xcconfig"; path = "Target Support Files/Pods-KvalifikaSdkSample/Pods-KvalifikaSdkSample.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = KvalifikaSdkSample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A13F7549FCC779AC4C0D1927 /* libPods-KvalifikaSdkSample-KvalifikaSdkSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KvalifikaSdkSample-KvalifikaSdkSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +95,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				57F86FAF268CE7F500B9086F /* File.swift */,
+				57F86FB1268CF02400B9086F /* KvalifikaSdkSample-Bridging-Header.h */,
 			);
 			name = KvalifikaSdkSample;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				57F86FB0268CE7F500B9086F /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A389447C258052EBECD5897A /* Pods-KvalifikaSdkSample-KvalifikaSdkSampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -457,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F54EEA5EA753E40C67EF41F3 /* Pods-KvalifikaSdkSample-KvalifikaSdkSampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = KvalifikaSdkSampleTests/Info.plist;
