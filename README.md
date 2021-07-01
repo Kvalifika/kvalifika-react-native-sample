@@ -81,6 +81,7 @@ Please add the following permissions to your app's Info.plist, so that the Kvali
 After the pods are installed, open your project's `.xcworkspace` file in Xcode. Add a blank Swift file to your project (File -> New -> Swift File), with a bridging header (it will prompt you to auto-create one).
 
 Right click on project's name & select new file.
+
 ![docs/1.png](docs/1.png)
 
 Choose and create empty Swift file
