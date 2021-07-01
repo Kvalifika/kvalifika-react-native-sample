@@ -76,6 +76,24 @@ Please add the following permissions to your app's Info.plist, so that the Kvali
 
 &nbsp;
 
+#### Create Objective C Bridging Header
+
+After the pods are installed, open your project's `.xcworkspace` file in Xcode. Add a blank Swift file to your project (File -> New -> Swift File), with a bridging header (it will prompt you to auto-create one).
+
+Right click on project's name & select new file.
+![docs/1.png](docs/1.png)
+
+Choose and create empty Swift file
+![docs/2.png](docs/2.png)
+
+Give name to your file
+![docs/3.png](docs/3.png)
+
+Select Create Bridging Header
+![docs/4.png](docs/4.png)
+
+&nbsp;
+
 ### Android Specific Parts
 
 After installing NPM package, please do following steps to set up Android environment:
