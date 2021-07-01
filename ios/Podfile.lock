@@ -58,10 +58,10 @@ PODS:
     - FlipperKit/Core
     - FlipperKit/FlipperKitNetworkPlugin
   - glog (0.3.5)
-  - Kvalifika (0.1.0):
+  - Kvalifika (0.2.0):
     - FaceTecSDK (= 9.0.4)
-  - kvalifika-react-native-sdk (0.3.0):
-    - Kvalifika
+  - kvalifika-react-native-sdk (0.4.0):
+    - Kvalifika (= 0.2.0)
     - React-Core
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.180)
@@ -472,8 +472,8 @@ SPEC CHECKSUMS:
   Flipper-RSocket: 127954abe8b162fcaf68d2134d34dc2bd7076154
   FlipperKit: 8a20b5c5fcf9436cac58551dc049867247f64b00
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
-  Kvalifika: f26011e05970896112fa4bdbcab94ead70bda201
-  kvalifika-react-native-sdk: 5de1ec6fdb834bb3dda5c7be45f2ebfdd7287b9a
+  Kvalifika: c0296af0b33a5edc9352adeb4961b11a63176717
+  kvalifika-react-native-sdk: 52589b4fb91490d58e00036a81e71a4308ee3838
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c

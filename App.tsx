@@ -37,6 +37,7 @@ const App = () => {
       console.log(error, message);
 
       if (error === KvalifikaSDKError.INVALID_APP_ID) {
+	console.log('App id error');
         Alert.alert('Invalid App ID', 'Please provide a valid ID');
       }
 
