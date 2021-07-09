@@ -938,10 +938,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@kvalifika/react-native-sdk@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@kvalifika/react-native-sdk/-/react-native-sdk-0.4.0.tgz#645859870a56623b54c711854f65359a0d4e83ae"
-  integrity sha512-rV+1oJOf5oI9OYOdFrZ54ftx0iwIsI/SPUAgTcBF8ei49DonwQMA0gp1smTL0PyNhNdm/UEhDPGEFGr3GBOabg==
+"@kvalifika/react-native-sdk@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@kvalifika/react-native-sdk/-/react-native-sdk-0.4.1.tgz#0ac4a0e165142b076fad5d8e2e4173c733540a54"
+  integrity sha512-vVgsS78AJyqC1UmrWOgx7ivvEqcVQo4DQQvRFMkJ3Zw/+FEZMTgm2Bnuu9Qcgash/3GGW5M/3ZUUz0apzbRIaA==
 
 "@react-native-community/cli-debugger-ui@^5.0.1-alpha.1":
   version "5.0.1-alpha.1"
