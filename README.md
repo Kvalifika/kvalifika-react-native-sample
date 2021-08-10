@@ -254,9 +254,6 @@ const App = () => {
       if (error === KvalifikaSDKError.DOCUMENT_IMAGES_UPLOAD_FAILED) {
       }
 
-      if (error === KvalifikaSDKError.COMPARE_IMAGES_FAILED) {
-      }
-
       if (error === KvalifikaSDKError.UNKNOWN_INTERNAL_ERROR) {
       }
     });
@@ -301,7 +298,6 @@ const App = () => {
 | REVERSE_PORTRAIT_NOT_ALLOWED  | Verification cancelled because device is in reverse portrait mode.                       |
 | FACE_IMAGES_UPLOAD_FAILED     | Could not upload face images. Internal request failed.                                   |
 | DOCUMENT_IMAGES_UPLOAD_FAILED | Could not upload ID card or passport images. Internal request failed.                    |
-| COMPARE_IMAGES_FAILED         | Could not compare images. Internal request failed.                                       |
 | UNKNOWN_INTERNAL_ERROR        | Session failed because of an unhandled internal error. This error comes with message.    |
 
 &nbsp;
