@@ -37,7 +37,7 @@ const App = () => {
       console.log(error, message);
 
       if (error === KvalifikaSDKError.INVALID_APP_ID) {
-	console.log('App id error');
+        console.log('App id error');
         Alert.alert('Invalid App ID', 'Please provide a valid ID');
       }
 
@@ -69,9 +69,6 @@ const App = () => {
       }
 
       if (error === KvalifikaSDKError.DOCUMENT_IMAGES_UPLOAD_FAILED) {
-      }
-
-      if (error === KvalifikaSDKError.COMPARE_IMAGES_FAILED) {
       }
 
       if (error === KvalifikaSDKError.UNKNOWN_INTERNAL_ERROR) {
