@@ -59,7 +59,7 @@ source 'https://github.com/Kvalifika/zoom-cocoapods-specs.git'
 platform :ios, '11.0'
 ```
 
-Then navigate to `ios` folder and run `pod install`
+Then navigate to `ios` folder and run `pod install` or `pod update`
 
 `Note:` pod install might take long time
 
